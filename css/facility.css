@@ -1,0 +1,70 @@
+.facility-title{
+  background-image: url("../外観・共用部/1号棟entrance2.jpg");
+  background-position: 50% 60%;
+}
+.facility-item{
+  margin-bottom: 80px;
+}
+.facility-list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+}
+.facility-list img{
+  height: 300px;
+  object-fit: cover;
+}
+.facility-list .fa-title{
+  font-size: 16px;
+}
+.facility-list p{
+  line-height: 1.1;
+}
+.facility-1,.facility-2,.facility-3{
+  margin-bottom: 120px;
+}
+.facility-1 .section-sub-title,
+.facility-2 .section-sub-title,
+.facility-3 .section-sub-title{
+  font-weight: bold;
+  font-size: 28px;
+}
+
+
+
+
+@media (max-width: 960px) {
+  .facility-list{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width: 768px) {
+  .facility-1 .section-sub-title,
+.facility-2 .section-sub-title,
+.facility-3 .section-sub-title{
+  font-size: 20px;
+  }
+
+  .concierge-list{
+   
+    flex-direction: column;
+  }
+  .co-list-left{
+    width: 100%;
+    padding-right: 0px;
+    border-right: none;
+  }
+  .co-list-right{
+    width: 100%;
+    margin-left: 0px;
+  }
+
+}
+@media (max-width:500px){
+  .facility-list{
+    grid-template-columns: 1fr;
+  }
+  .facility-list img{
+    height: 300px;
+  }
+}

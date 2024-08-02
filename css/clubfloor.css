@@ -1,0 +1,281 @@
+.club-mainvisual{
+  position: relative;
+  height: 80vh;
+}
+.club-mainvisual img{
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+}
+.club-title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  text-shadow: 4px 5px 15px rgba(0,0,0,0.9);
+  font-size: 48px;
+  font-weight: normal;
+  text-align: center;
+  width: 100%;
+}
+
+/*club-heading*/
+.club-heading{
+  margin-top: 120px;
+}
+.clubnav{
+  background-color: rgba(227,152,73,0.25);
+  padding: 40px;
+  margin-bottom: 80px;
+}
+.clubnav-title{
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.club-btn{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  margin-top: 50px;
+}
+.club-btn li{
+  text-align: center;
+}
+.club-btn a{
+  position: relative;
+  color: white;
+  background-color: #856364;
+  display: block;
+  padding: 20px 0;
+  transition: all 0.5s;
+}
+.club-btn a:hover .arrow-box{
+  right: 8%;
+}
+.club-btn a:hover .arrow-box .arrow{
+  width: 25px;
+}
+
+/*club-concept*/
+.club-concept{
+  margin-bottom: 400px;
+}
+.club-concept-list{
+  margin-bottom: 80px;
+}
+.club-concept-img{
+  position: absolute;
+  bottom: -300px;
+  width: 48%;
+  height: 350px;
+  object-fit: cover;
+  z-index: -1;
+}
+.club-concept-img1{
+  left: 0;
+}
+.club-concept-img2{
+  right: 0;
+}
+
+/*plan*/
+.club-plan{
+  margin-bottom: 120px;
+}
+.clubplan-tex{
+  margin-bottom: 50px;
+}
+.club-planlist{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:20px;
+}
+.club-planlist li{
+  padding: 10px;
+border: 1px solid #ccc;
+height: 320px;
+position: relative;
+}
+.club-planlist img{
+  height: auto;
+  max-height: 280px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.club-planlist p{
+  position: absolute;
+  bottom: 2%;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}
+
+.clubplan-box:not(:last-of-type){
+  margin-bottom: 80px;
+}
+
+/*club-facility*/
+.club-facility{
+  margin-bottom: 120px;
+}
+.club-facility  .container>p{
+  margin-bottom: 50px;
+}
+.club-fa-img{
+  display: flex;
+  gap: 20px;
+}
+.club-facility li{
+  width: 50%;
+}
+  .club-facility  img{
+  height: 300px;
+  object-fit: cover;
+  object-position: 80% 50%;
+}
+.club-fa-img p{
+  font-size: 12px;
+}
+
+/*club-photo*/
+.club-photo{
+  margin-bottom: 120px;
+}
+.clubphoto-list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+}
+.clubphoto-list img{
+  height: 300px;
+  object-fit: cover;
+}
+.clubphoto-item:not(:last-of-type){
+  margin-bottom: 80px;
+}
+
+/*club-outline*/
+.club-outline{
+  margin-bottom: 80px;
+}
+.cluboutline-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.cluboutline-list dt{
+  width: 28%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.cluboutline-list dd{
+  width: 72%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/*レスポンシブ*/
+@media (max-width:960px){
+  .club-title{
+    font-size: 36px;
+  }
+  .club-planlist{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .club-planlist img{
+    max-height: 240px;
+  }
+
+
+  .clubphoto-list{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+
+
+
+@media (max-width:768px){
+  /*heading*/
+  .club-btn{
+    grid-template-columns: 1fr;
+  }
+  
+  .club-btn li:last-of-type{
+    margin-bottom: 0px;
+  }
+  .clubnav-title{
+    font-size: 24px;
+  }
+/*concept*/
+.club-concept-list{
+  margin: 80px 0 500px;
+}
+.club-concept-img1{
+  width: 100%;
+  height: 250px;
+  top: -400px;
+  width: 70%;
+}
+.club-concept-img2{
+  width: 70%;
+  height: 250px;
+  z-index: -1;
+  top: -200px;
+ margin-left: auto;
+}
+.club-concept{
+  margin-bottom: 80px;
+}
+/*plan*/
+.club-plan{
+  margin-bottom: 80px;
+}
+/*club-facility*/
+.club-facility{
+  margin-bottom: 80px;
+}
+.club-fa-img{
+flex-direction: column;
+}
+.club-facility li{
+  width: 100%;
+}
+.club-facility  img{
+  height: 250px;
+}
+
+.club-photo{
+  margin-bottom: 80px;
+}
+
+
+.cluboutline-list dt{
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: none;
+  margin-bottom: 0px;
+}
+.cluboutline-list dd{
+  width: 100%;
+  margin-left: 10px;
+}
+}
+
+@media (max-width:500px){
+  .club-title{
+    font-size: 28px;
+  }
+
+  .club-planlist{
+    grid-template-columns: 1fr;
+  }
+
+  .clubphoto-list{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  }
