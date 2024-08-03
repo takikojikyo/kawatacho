@@ -280,7 +280,7 @@ opacity: 0.8;
   margin-right: 5px;
 }
 .h-nav1 .h-info{
-  background: #917168;
+  background: #856364;
   text-align: center;
   display: block;
 }
@@ -731,7 +731,8 @@ margin: 0;
     z-index: 99;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-top: 75px;
   }
   .open .h-nav{
     visibility: visible;
