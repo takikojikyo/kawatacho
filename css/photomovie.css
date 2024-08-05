@@ -12,14 +12,32 @@
 }
 .movie-list{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 15px;
 }
-.movie-item1{
-  margin-bottom: 80px;
+.movie-list a{
+  display: block;
+  position: relative;
 }
-
-
+.movie-list a:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0px 10px 15px;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  margin: auto;
+}
+.movie-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
 /*photo*/
 .photo-list{
   display: grid;
@@ -90,7 +108,7 @@
   .photomovie-title .page-sub-title{
     font-size: 24px;
   }
-.movie-list{
+  .movie-box{
   grid-template-columns: 1fr;
 }
 
